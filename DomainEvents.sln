@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainEvents", "DomainEvents\DomainEvents.csproj", "{CA64AC42-4DFF-45E2-84AA-DECE9439922F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainAEvents", "DomainAEvents\DomainAEvents.csproj", "{CA64AC42-4DFF-45E2-84AA-DECE9439922F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalDomainLibs", "ExternalDomainLibs", "{198FAFA1-C731-4094-8849-F571186F788E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainAExportedLibs", "DomainAExportedLibs", "{198FAFA1-C731-4094-8849-F571186F788E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainEvents.Tests", "..\DomainEvents.Tests\DomainEvents.Tests.csproj", "{7B0D0A41-0A60-4182-9B89-70AA2066BBAF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainAEvents.Tests", "DomainEvents.Tests\DomainAEvents.Tests.csproj", "{7B0D0A41-0A60-4182-9B89-70AA2066BBAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventProcessors", "EventProcessors", "{AC6AC679-68BC-4C8E-9FEC-6EE2A42D51C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainAEventProcessors", "DomainAEventProcessors\DomainAEventProcessors.csproj", "{4D494685-9AB6-4CC9-B025-63E8BEE72CB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +27,10 @@ Global
 		{7B0D0A41-0A60-4182-9B89-70AA2066BBAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B0D0A41-0A60-4182-9B89-70AA2066BBAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B0D0A41-0A60-4182-9B89-70AA2066BBAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D494685-9AB6-4CC9-B025-63E8BEE72CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D494685-9AB6-4CC9-B025-63E8BEE72CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D494685-9AB6-4CC9-B025-63E8BEE72CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D494685-9AB6-4CC9-B025-63E8BEE72CB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,5 +38,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{CA64AC42-4DFF-45E2-84AA-DECE9439922F} = {198FAFA1-C731-4094-8849-F571186F788E}
 		{7B0D0A41-0A60-4182-9B89-70AA2066BBAF} = {198FAFA1-C731-4094-8849-F571186F788E}
+		{4D494685-9AB6-4CC9-B025-63E8BEE72CB6} = {AC6AC679-68BC-4C8E-9FEC-6EE2A42D51C7}
 	EndGlobalSection
 EndGlobal

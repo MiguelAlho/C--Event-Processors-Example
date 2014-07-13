@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DomainEvents.Events
+namespace DomainA.Events
 {
     /// <summary>
     /// Class describes an event signaling the end of a process

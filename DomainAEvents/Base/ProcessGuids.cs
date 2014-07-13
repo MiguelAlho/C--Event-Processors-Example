@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DomainEvents.Base
+namespace DomainA
 {
     /// <summary>
     /// Sample Guids of process types in the domain. We'll use it in the example 

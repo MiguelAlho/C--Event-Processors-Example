@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DomainEvents
+namespace DomainA
 {
     /// <summary>
     /// Event Base class. Could be in another project / class library for sharing
