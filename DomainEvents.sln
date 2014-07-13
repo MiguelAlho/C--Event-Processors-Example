@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainEvents", "DomainEvents\DomainEvents.csproj", "{CA64AC42-4DFF-45E2-84AA-DECE9439922F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalDomainLibs", "ExternalDomainLibs", "{198FAFA1-C731-4094-8849-F571186F788E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainEvents.Tests", "..\DomainEvents.Tests\DomainEvents.Tests.csproj", "{7B0D0A41-0A60-4182-9B89-70AA2066BBAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA64AC42-4DFF-45E2-84AA-DECE9439922F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA64AC42-4DFF-45E2-84AA-DECE9439922F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA64AC42-4DFF-45E2-84AA-DECE9439922F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA64AC42-4DFF-45E2-84AA-DECE9439922F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B0D0A41-0A60-4182-9B89-70AA2066BBAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B0D0A41-0A60-4182-9B89-70AA2066BBAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B0D0A41-0A60-4182-9B89-70AA2066BBAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B0D0A41-0A60-4182-9B89-70AA2066BBAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CA64AC42-4DFF-45E2-84AA-DECE9439922F} = {198FAFA1-C731-4094-8849-F571186F788E}
+		{7B0D0A41-0A60-4182-9B89-70AA2066BBAF} = {198FAFA1-C731-4094-8849-F571186F788E}
+	EndGlobalSection
+EndGlobal
