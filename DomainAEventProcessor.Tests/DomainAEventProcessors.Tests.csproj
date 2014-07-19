@@ -44,8 +44,10 @@
   <ItemGroup>
     <Compile Include="Entities\DailyActivityTests.cs" />
     <Compile Include="Entities\ProcessStatusTests.cs" />
+    <Compile Include="Entities\ProcessTypeCountTests.cs" />
     <Compile Include="Fakes\InProcessRepository.cs" />
     <Compile Include="Interfaces\ITestRepository.cs" />
+    <Compile Include="Processors\ProcessTypeCounterEventProcessorTests.cs" />
     <Compile Include="Processors\DailyActivityEventProcessorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
