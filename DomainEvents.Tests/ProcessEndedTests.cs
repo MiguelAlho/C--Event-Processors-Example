@@ -1,4 +1,5 @@
 ﻿using System;
+using Events;
 using NUnit.Framework;
 using DomainA.Events;
 

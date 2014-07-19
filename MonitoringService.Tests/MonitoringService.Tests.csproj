@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7B0D0A41-0A60-4182-9B89-70AA2066BBAF}</ProjectGuid>
+    <ProjectGuid>{237ACC2C-D6CD-4C36-A872-A0505D00E39E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DomainEvents.Tests</RootNamespace>
-    <AssemblyName>DomainEvents.Tests</AssemblyName>
+    <RootNamespace>MonitoringService.Tests</RootNamespace>
+    <AssemblyName>MonitoringService.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,8 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.2.1402.2112\lib\net40\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>..\C--Event-Processors-Example\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -42,21 +51,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProcessStartedTests.cs" />
-    <Compile Include="ProcessEndedTests.cs" />
+    <Compile Include="MonitorServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DomainAEventProcessors\DomainAEventProcessors.csproj">
+      <Project>{4d494685-9ab6-4cc9-b025-63e8bee72cb6}</Project>
+      <Name>DomainAEventProcessors</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DomainAEvents\DomainAEvents.csproj">
       <Project>{ca64ac42-4dff-45e2-84aa-dece9439922f}</Project>
       <Name>DomainAEvents</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EventProcessing.Framework\EventProcessing.Framework.csproj">
+      <Project>{bc2531b8-699b-4e4b-b18f-d2c3797992bd}</Project>
+      <Name>EventProcessing.Framework</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Events\Events.csproj">
-      <Project>{08ADE979-4B88-48E5-8999-C73962A290FB}</Project>
+      <Project>{08ade979-4b88-48e5-8999-c73962a290fb}</Project>
       <Name>Events</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonitoringService\MonitoringService.csproj">
+      <Project>{8458bf5b-48c3-47af-aa26-37cf11e03697}</Project>
+      <Name>MonitoringService</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

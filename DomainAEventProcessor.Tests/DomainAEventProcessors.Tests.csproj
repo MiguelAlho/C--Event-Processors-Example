@@ -67,6 +67,10 @@
       <Project>{bc2531b8-699b-4e4b-b18f-d2c3797992bd}</Project>
       <Name>EventProcessing.Framework</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Events\Events.csproj">
+      <Project>{08ADE979-4B88-48E5-8999-C73962A290FB}</Project>
+      <Name>Events</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

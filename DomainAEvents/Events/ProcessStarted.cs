@@ -1,4 +1,5 @@
 ﻿using System;
+using Events;
 
 namespace DomainA.Events
 {

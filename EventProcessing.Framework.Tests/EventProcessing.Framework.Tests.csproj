@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7B0D0A41-0A60-4182-9B89-70AA2066BBAF}</ProjectGuid>
+    <ProjectGuid>{6FBE0177-9367-4E3A-83DE-4A3515B5632F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DomainEvents.Tests</RootNamespace>
-    <AssemblyName>DomainEvents.Tests</AssemblyName>
+    <RootNamespace>EventProcessing.Framework.Tests</RootNamespace>
+    <AssemblyName>EventProcessing.Framework.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,8 +30,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.2.1402.2112\lib\net40\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>..\C--Event-Processors-Example\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -42,20 +45,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProcessStartedTests.cs" />
-    <Compile Include="ProcessEndedTests.cs" />
+    <Compile Include="Dispatch\EventDispatcherTests.cs" />
+    <Compile Include="Fakes\EventThatHappened.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DomainAEvents\DomainAEvents.csproj">
-      <Project>{ca64ac42-4dff-45e2-84aa-dece9439922f}</Project>
-      <Name>DomainAEvents</Name>
+    <ProjectReference Include="..\EventProcessing.Framework\EventProcessing.Framework.csproj">
+      <Project>{bc2531b8-699b-4e4b-b18f-d2c3797992bd}</Project>
+      <Name>EventProcessing.Framework</Name>
     </ProjectReference>
     <ProjectReference Include="..\Events\Events.csproj">
-      <Project>{08ADE979-4B88-48E5-8999-C73962A290FB}</Project>
+      <Project>{08ade979-4b88-48e5-8999-c73962a290fb}</Project>
       <Name>Events</Name>
     </ProjectReference>
   </ItemGroup>
