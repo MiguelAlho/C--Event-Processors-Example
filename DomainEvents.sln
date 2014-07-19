@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventProcessors", "EventPro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainAEventProcessors", "DomainAEventProcessors\DomainAEventProcessors.csproj", "{4D494685-9AB6-4CC9-B025-63E8BEE72CB6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainAEventProcessors.Tests", "DomainAEventProcessor.Tests\DomainAEventProcessors.Tests.csproj", "{16E0C3D5-57CF-4E6A-8218-04B6FDFA8F57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventProcessing.Framework", "EventProcessing.Framework\EventProcessing.Framework.csproj", "{BC2531B8-699B-4E4B-B18F-D2C3797992BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,14 @@ Global
 		{4D494685-9AB6-4CC9-B025-63E8BEE72CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D494685-9AB6-4CC9-B025-63E8BEE72CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D494685-9AB6-4CC9-B025-63E8BEE72CB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16E0C3D5-57CF-4E6A-8218-04B6FDFA8F57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16E0C3D5-57CF-4E6A-8218-04B6FDFA8F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16E0C3D5-57CF-4E6A-8218-04B6FDFA8F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16E0C3D5-57CF-4E6A-8218-04B6FDFA8F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC2531B8-699B-4E4B-B18F-D2C3797992BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC2531B8-699B-4E4B-B18F-D2C3797992BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC2531B8-699B-4E4B-B18F-D2C3797992BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC2531B8-699B-4E4B-B18F-D2C3797992BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,5 +51,7 @@ Global
 		{CA64AC42-4DFF-45E2-84AA-DECE9439922F} = {198FAFA1-C731-4094-8849-F571186F788E}
 		{7B0D0A41-0A60-4182-9B89-70AA2066BBAF} = {198FAFA1-C731-4094-8849-F571186F788E}
 		{4D494685-9AB6-4CC9-B025-63E8BEE72CB6} = {AC6AC679-68BC-4C8E-9FEC-6EE2A42D51C7}
+		{16E0C3D5-57CF-4E6A-8218-04B6FDFA8F57} = {AC6AC679-68BC-4C8E-9FEC-6EE2A42D51C7}
+		{BC2531B8-699B-4E4B-B18F-D2C3797992BD} = {AC6AC679-68BC-4C8E-9FEC-6EE2A42D51C7}
 	EndGlobalSection
 EndGlobal
