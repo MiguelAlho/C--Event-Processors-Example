@@ -1,1 +1,4 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="MonitoringService.MonitorService" CodeBehind="MonitorService.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true"
+    Service="MonitorService" 
+    Factory="Castle.Facilities.WcfIntegration.DefaultServiceHostFactory, Castle.Facilities.WcfIntegration"
+     %>

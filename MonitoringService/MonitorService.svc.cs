@@ -1,4 +1,6 @@
-﻿using Events;
+﻿using CuttingEdge.Conditions;
+using EventProcessing.Framework.Dispatch;
+using Events;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,13 +11,20 @@ using System.Text;
 
 namespace MonitoringService
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "MonitorService" in code, svc and config file together.
-    // NOTE: In order to launch WCF Test Client for testing this service, please select MonitorService.svc or MonitorService.svc.cs at the Solution Explorer and start debugging.
     public class MonitorService : IMonitor
     {
-        public void ReceiveEvent(Event value)
+        private IEventDispatcher dispatcher;
+
+        public MonitorService(IEventDispatcher dispatcher)
         {
-            throw new NotImplementedException();
+            Condition.Requires(dispatcher, "dispatcher").IsNotNull();
+
+            this.dispatcher = dispatcher;
+        }
+
+        public void ReceiveEvent(Event @event)
+        {
+            dispatcher.DispatchEvent(@event);
         }
     }
 }
