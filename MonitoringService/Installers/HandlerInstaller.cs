@@ -36,11 +36,7 @@ namespace MonitoringService.Installers
                 }));
             //.Configure(c => c.LifestylePerWebRequest()));
 
-            //load all eventTypes
-            //var knownMonitoringEvents = Assembly.GetAssembly(typeof (WorkOrderRequested))
-            //    .GetExportedTypes()
-            //    .Where(o => typeof(MonitoringEvent).IsAssignableFrom(o))
-            //    .ToList();
+            
         }
     }
 }

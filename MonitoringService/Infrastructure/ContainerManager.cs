@@ -19,6 +19,11 @@ namespace MonitoringService.Infrastructure
                     .AddFacility<WcfFacility>()
                     .AddFacility<TypedFactoryFacility>();
 
+           
+        }
+
+        public static void Install()
+        {
             _container.Install(FromAssembly.InThisApplication());
         }
 

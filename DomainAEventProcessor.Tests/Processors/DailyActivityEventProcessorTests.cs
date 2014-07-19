@@ -20,7 +20,7 @@ namespace DomainAEventProcessor.Tests
     public class DailyActivityEventProcessorTests
     {
         [Test]
-        public void CanCreateInstanceOfWorkOrderRequestDailyActivityEventProcessor()
+        public void CanCreateInstanceOfDailyActivityEventProcessor()
         {
             IRepository<DailyActivity> repo = GetRepositoryForTest();
             DailyActivityEventProcessor processor = new DailyActivityEventProcessor(
@@ -74,7 +74,7 @@ namespace DomainAEventProcessor.Tests
         }
 
         [Test]
-        public void CanProcessAWorkOrderRequestCompletedEvent()
+        public void CanProcessAProcessEndededEvent()
         {
             Guid guid = Guid.NewGuid();
             Guid processType = ProcessGuids.ProcessA;
@@ -101,7 +101,7 @@ namespace DomainAEventProcessor.Tests
         }
 
         [Test]
-        public void IgnoreAWorkOrderRequestCompletedEventForAUnkownWorkOrder()
+        public void IgnoreAProcessEndedEventForAUnkownProcess()
         {
             Guid guid = Guid.NewGuid();
             Guid guid2 = Guid.NewGuid();

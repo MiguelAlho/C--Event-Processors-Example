@@ -12,7 +12,8 @@ namespace MonitoringService.Infrastructure
 {
     public class HandleEventFactorySelector : DefaultTypedFactoryComponentSelector
     {
-        protected override Func<IKernelInternal, IReleasePolicy, object> BuildFactoryComponent(MethodInfo method,
+        protected override Func<IKernelInternal, IReleasePolicy, object> BuildFactoryComponent(
+            MethodInfo method,
             string componentName,
             Type componentType,
             IDictionary additionalArguments)

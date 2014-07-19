@@ -56,6 +56,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fakes\EventThatHappened.cs" />
+    <Compile Include="Fakes\SomeEntity.cs" />
+    <Compile Include="Infrastructure\HandleEventFactorySelectorTests.cs" />
+    <Compile Include="Infrastructure\InMemoryRepositoryTests.cs" />
     <Compile Include="Installers\HandlerInstallersTest.cs" />
     <Compile Include="Installers\ServiceInstallersTest.cs" />
     <Compile Include="MonitorServiceTests.cs" />

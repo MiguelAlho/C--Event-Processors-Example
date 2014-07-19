@@ -13,7 +13,7 @@ namespace DomainAEventProcessor.Tests.Entities
     public class DailyActivityTests
     {
         [Test]
-        public void CanCreateInstanceOfWorkOrderDailyActivity()
+        public void CanCreateInstanceOfDailyActivity()
         {
             string id = DateTime.UtcNow.ToString("yyyy-MM-dd");
             DailyActivity instance = new DailyActivity(id);
