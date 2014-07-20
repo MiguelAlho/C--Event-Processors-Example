@@ -99,6 +99,7 @@
     </Compile>
     <Compile Include="IMonitor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Infrastructure\ServiceKnownTypeRegister.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

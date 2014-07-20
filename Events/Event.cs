@@ -40,7 +40,7 @@ namespace Events
 
         /// <summary>
         /// This method is used to scan assemblies and get all known types with 
-        /// MonitoringEvent as it's base, inorder for service deserialization to work 
+        /// Event as it's base, inorder for service deserialization to work 
         /// correctly
         /// </summary>
         /// <returns></returns>
@@ -50,7 +50,7 @@ namespace Events
         }
 
         /// <summary>
-        /// Gets types -> can be moved to a utilizty class
+        /// Gets types -> can be moved to a utility class
         /// </summary>
         /// <param name="baseType"></param>
         /// <param name="assembly"></param>
