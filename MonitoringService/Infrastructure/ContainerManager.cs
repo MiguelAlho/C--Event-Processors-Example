@@ -22,7 +22,7 @@ namespace MonitoringService.Infrastructure
            
         }
 
-        public static void Install()
+        public static void CallInstallers()
         {
             _container.Install(FromAssembly.InThisApplication());
         }

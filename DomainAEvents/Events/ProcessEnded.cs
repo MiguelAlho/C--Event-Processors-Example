@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.Serialization;
 using Events;
 
 namespace DomainA.Events
@@ -6,6 +7,7 @@ namespace DomainA.Events
     /// <summary>
     /// Class describes an event signaling the end of a process
     /// </summary>
+    [DataContract]
     public class ProcessEnded : Event
     {
         /// <summary>

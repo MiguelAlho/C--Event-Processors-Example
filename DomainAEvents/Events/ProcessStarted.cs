@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Runtime.Serialization;
 using Events;
 
 namespace DomainA.Events
 {
+    [DataContract]
     public class ProcessStarted : Event
     {
         /// <summary>

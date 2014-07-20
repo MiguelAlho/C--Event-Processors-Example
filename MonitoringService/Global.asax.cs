@@ -13,8 +13,8 @@ namespace MonitoringService
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            var container = ContainerManager.Container;
-            container.Install();
+            //var container = ContainerManager.Container;
+            ContainerManager.CallInstallers();
         }
 
         protected void Session_Start(object sender, EventArgs e)
